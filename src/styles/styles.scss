@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Overpass+Mono:300,400);
+@import "variables.scss";
+@import "tags.scss";
+@import "overwrite.bootstrap.scss";
+@import "typography.scss";
+@import "experiment.scss";
+
+
+// IDs //
+
+
+.bg-pattern {
+    background: rgba(0,0,0,.1);
+    height: 60px;
+}
+.navbar-default, .navbar-collapse {
+    background-color: transparent;
+    border: none;
+
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: $primary-dark-color;
+    font-size: 1.5em;
+     span {
+        opacity: 0;
+    }
+    &:hover, &:active {
+        span { 
+            opacity: .5;
+        }
+    }
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus 
+{
+        color: $grey;
+        background-color: transparent;
+}
+
+.green-bg {
+    background-image: url("images/blue-texture.png");
+}
+.white-bg {
+    background: rgba(220,220,220,.3);
+}
+
+.centre {
+    display: block;
+    margin: 2em auto;
+}
+
+.text-centre {
+    text-align: center;
+}
+
+.container {
+    padding: 2em 0;
+}
+
+.mainImage-container {
+    background: rgba(255,255,255,.7);
+        height: 400px;
+
+}
+
+
+.trans-text-cont {
+        background-color: transparent;
+    text-align: right;
+    animation : trans-text 0.5s 1.5s ease-in-out both;
+    vertical-align: middle;
+}
+
+#mainImage {
+    background-image: url("images/pub.png");
+    background-color: transparent;
+
+    //background-attachment: fixed;
+        height: 400px;
+
+
+    /*background-size:     cover; */
+    background-repeat:   no-repeat;
+    background-position: left center;  
+
+    /*animation: bounceIn 2s ease-in 1s both;*/
+    animation : trans 1s .5s ease-in-out both;
+}
+
+.no-pad {
+    padding: 0;
+}
+
+.max-width-700 {
+    max-width: 700px;
+
+}
+
+    .css-columns {
+        -moz-columns:3;
+        -webkit-columns:3;
+        columns:3;
+
+        -moz-column-gap: 3em;
+-webkit-column-gap: 3em;
+column-gap: 3em;
+    }
+
+    .line {
+        border-bottom: $primary-dark-color dotted 2px;
+        margin-top: 1em;
+    }

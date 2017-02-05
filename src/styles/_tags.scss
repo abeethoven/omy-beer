@@ -1,0 +1,29 @@
+body, html {
+    height: 100%;
+    font-weight: 400;
+    background-color: beige;
+    font-family: 'Overpass Mono', monospace;
+}
+body, html {
+    background-image: url("images/bg-repeat.jpg");
+
+}
+header {
+    height: $header-height;
+}
+nav {
+    z-index: 99;
+    height: $header-height;
+}
+main {
+    background-color: $secondry-dark-color;
+    padding-bottom: 5em; 
+    min-height: 10em;
+}
+footer {
+    background-color: $light-grey;     
+    padding: 3em 0; 
+    h2, h3 {
+        color: $white;
+    }
+}

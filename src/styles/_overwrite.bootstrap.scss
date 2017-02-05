@@ -1,0 +1,84 @@
+/* NAVIGATION */ 
+
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+#navbar-collapse .navbar-nav {
+    float: right;
+    @media (max-width: $mobile) {
+        float: left;
+    }     
+}
+
+.navbar-default, .navbar-collapse {
+    background-color: $primary-dark-color;
+    border-color: $primary-dark-color;
+    letter-spacing: 2px;
+}
+
+.navbar-default {
+    .navbar-collapse{
+       border-color: darken($primary-dark-color, 10%);
+    }
+    .navbar-nav {
+        &>li>a {
+            color:$secondry-dark-color;
+        }
+        &>li>a:hover, &>li> a:focus {
+            color: $secondry-dark-color;
+        }
+    }
+    .navbar-toggle {
+        border-radius: 0;
+        border-color:  $secondry-dark-color;
+        .icon-bar {
+            background-color: $secondry-dark-color;
+        }
+        &:hover, &:focus {
+            background-color: darken($primary-dark-color, 10%);
+        }
+    }
+}
+
+/* FORM */
+
+.form-group-sm .form-control {
+    height: 25px;
+    padding: 6px 9px;
+    font-size: 12px;
+    line-height: 1.2;
+    border-radius: 0;
+}
+
+.form-control {
+    border: 1px solid $light-grey;
+    &:focus {
+        border-color: darken($light-grey, 10%);
+    } 
+}
+
+/* OTHERS */
+
+input, button, .form-control, .btn {
+    border-radius: 0;
+}
+
+.btn-primary{
+    background-color: $primary-dark-color;
+    border: none;
+    &:active, &:hover, &:focus {
+        background-color: darken($primary-dark-color, 10%);
+        color: $secondry-dark-color;
+        box-shadow: none;
+    }
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: normal;
+}
